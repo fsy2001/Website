@@ -1,5 +1,6 @@
 .card {
-  $unit: 200px; $edge: 5px;
+  // unit : edge = 40 : 1
+  $unit: 5em; $edge: $unit / 40;
 
   width: 5 * $unit + 4 * $edge;
   height: 3 * $unit + 2 * $edge;
