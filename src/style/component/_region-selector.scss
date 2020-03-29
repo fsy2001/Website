@@ -1,0 +1,56 @@
+@import "../presets/values";
+
+$test: solid 1px red;
+
+.region-selector {
+  //@include center;
+  //
+  //display: flex;
+  //justify-content: center;
+
+  border: $test;
+  @include center-column;
+
+}
+
+.page-container {
+  border: $test;
+}
+
+.country, .city {
+  @include center-row;
+}
+
+.country-selector {
+  background-color: #515151;
+}
+
+.city {
+  background-color: #919191;
+}
+
+.country-option {
+  @include center-column;
+
+  img {
+    $radius: 2.5em;
+
+    width: 2 * $radius; height: 2 * $radius;
+    border-radius: $radius;
+  }
+
+  span {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+  }
+
+  img, span {
+    display: block;
+  }
+}
+
+
+
+
+

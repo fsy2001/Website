@@ -1,0 +1,130 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: white; }
+
+.page-container {
+  width: 70em; }
+
+header {
+  background-color: #333333;
+  color: white; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 50%; }
+  .header .left {
+    float: left;
+    transform: scale(0.7, 0.7); }
+  .header .right {
+    float: right; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000000; }
+
+.nav {
+  padding: 0.4em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+  .nav .nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column; }
+    .nav .nav-item a {
+      color: #d0d0d0;
+      font-size: 1.2em;
+      text-align: center;
+      text-decoration: none;
+      padding-right: 0.5em;
+      transition: color 1s; }
+    .nav .nav-item:hover a {
+      color: #ffffff; }
+    .nav .nav-item:active a {
+      color: #ffffff; }
+
+.fixed-button {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .fixed-button a {
+    font-size: 4em;
+    text-decoration: none;
+    color: #414141;
+    display: flex;
+    align-items: center;
+    width: 1em;
+    height: 1em;
+    padding: 0.1em;
+    margin: 0.2em;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+footer {
+  background-color: #f5f5f7; }
+
+.footer {
+  font-size: 1em;
+  font-weight: normal;
+  color: #86868b; }
+
+body > div, header, footer, nav {
+  display: flex;
+  justify-content: center; }
+
+main > * {
+  display: flex;
+  justify-content: center; }
+
+.outer {
+  display: flex;
+  justify-content: center; }
+
+.region-selector {
+  border: solid 1px red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
+.page-container {
+  border: solid 1px red; }
+
+.country, .city {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+
+.country-selector {
+  background-color: #515151; }
+
+.city {
+  background-color: #919191; }
+
+.country-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+  .country-option img {
+    width: 5em;
+    height: 5em;
+    border-radius: 2.5em; }
+  .country-option span {
+    font-size: 3em;
+    font-weight: bold;
+    color: white; }
+  .country-option img, .country-option span {
+    display: block; }
+
+/*# sourceMappingURL=browse.css.map */

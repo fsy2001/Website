@@ -10,7 +10,7 @@
 <body>
 
 <div class="fixed-button">
-    <a href="index.html#top">
+    <a href="#top">
         <i class="fa fa-arrow-up"></i>
     </a>
 
@@ -23,17 +23,18 @@
 
 
 <header id="top">
-    <div class="left">
-        <img src="" alt="icon">
-    </div>
 
-    <div class="center">
-        <h1>Travel Book</h1>
-        <input type="text">
-    </div>
+    <div class="page-container header">
+        <img class="left" src="Design/logo.svg" alt="website logo">
 
-    <div class="right">
+        <div class="center">
+            <h1>Travel Book</h1>
+            <input type="text">
+        </div>
 
+        <div class="right">
+
+        </div>
     </div>
 
 </header>
@@ -43,35 +44,35 @@
     <div class="page-container nav">
         <div class="nav-item">
             <!--        <i class="fa fa-3x fa-home"></i>-->
-            <a href="#">
+            <a href="index.html">
                 首页
             </a>
         </div>
 
         <div class="nav-item">
             <!--        <i class="fa fa-3x fa-send"></i>-->
-            <a href="#">
+            <a href="browse.html">
                 浏览
             </a>
         </div>
 
         <div class="nav-item">
             <!--        <i class="fa fa-3x fa-star"></i>-->
-            <a href="#">
+            <a href="popular.html">
                 热门
             </a>
         </div>
 
         <div class="nav-item">
             <!--        <i class="fa fa-3x fa-plus"></i>-->
-            <a href="#">
+            <a href="upload.html">
                 上传
             </a>
         </div>
 
         <div class="nav-item">
             <!--        <i class="fa fa-3x fa-search"></i>-->
-            <a href="#">
+            <a href="search.html">
                 搜索
             </a>
         </div>
@@ -83,7 +84,7 @@
     <section id="introduction">
 
         <div class="page-container">
-            <img src="Design/logo.svg" alt="website logo"/>
+            <img src="Design/logo.svg" alt="website logo">
             <h1>Travel Book</h1>
             <p class="subtitle">
                 欢迎来到Travel Book！
@@ -140,13 +141,14 @@
     </div>
 
     <section id="region">
-        <img src="http://placekitten.com/200/200" alt="global" />
-        <h1>来自全球的照片</h1>
-        <p class="subtitle">
-            本站的照片遍布全球各大景点，
-            敬请欣赏。
-        </p>
-
+        <div class="page-container">
+            <img src="http://placekitten.com/200/200" alt="global"/>
+            <h1>来自全球的照片</h1>
+            <p class="subtitle">
+                本站的照片遍布全球各大景点，
+                敬请欣赏。
+            </p>
+        </div>
 
 
     </section>
@@ -209,9 +211,11 @@
 
 
 <footer>
-    Email: fsy2001@outlook.com<br />
-    <hr />
-    Copyright © 反正也不会有人看我的网站，要版权干什么。
+    <div class="page-container footer">
+        Email: fsy2001@outlook.com<br/>
+        <hr/>
+        Copyright © 反正也不会有人看我的网站，要版权干什么。
+    </div>
 </footer>
 
 

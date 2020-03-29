@@ -1,0 +1,58 @@
+@import "../presets/values";
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.nav {
+
+
+  padding: 0.4em 0;
+
+  @include center-row;
+
+
+
+  .nav-item {
+    @include center-column;
+
+    $default: #d0d0d0;
+    $hover: #ffffff;
+    $active: #ffffff;
+
+    //i {
+    //  color: $default;
+    //  padding-right: 0.5em;
+    //  transition: color 1s;
+    //}
+
+    a {
+      color: $default;
+      font-size: 1.2em;
+      text-align: center;
+      text-decoration: none;
+      padding-right: 0.5em;
+      transition: color 1s;
+    }
+
+    &:hover {
+      //i {
+      //  color: $hover;
+      //}
+      a {
+        color: $hover;
+
+      }
+    }
+    &:active {
+      //i {
+      //  color: $active;
+      //}
+      a {
+        color: $active;
+      }
+    }
+  }
+}

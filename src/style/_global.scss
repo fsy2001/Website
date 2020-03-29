@@ -14,11 +14,24 @@ body {
 }
 
 header {
+  background-color: #333333;
+  color: white;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  opacity: 50%;
+
 
   .left {
     float: left;
+    transform: scale(0.7,0.7);
+  }
+
+  .center {
+
   }
 
   .right {
@@ -26,99 +39,46 @@ header {
   }
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  background-color: #000000;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-around;
-
-  padding: 0 3em;
+@import "component/navigation-bar";
 
 
-
-
-  .nav-item {
-    display: flex;
-    align-items: center;
-
-    $default: #d0d0d0;
-    $hover: #ffffff;
-    $active: #ffffff;
-
-    //i {
-    //  color: $default;
-    //  padding-right: 0.5em;
-    //  transition: color 1s;
-    //}
-
-    a {
-      color: $default;
-      font-size: 2em;
-      text-align: center;
-      text-decoration: none;
-      padding-right: 0.5em;
-      transition: color 1s;
-    }
-
-    &:hover {
-      //i {
-      //  color: $hover;
-      //}
-      a {
-        color: $hover;
-
-      }
-    }
-    &:active {
-      //i {
-      //  color: $active;
-      //}
-      a {
-        color: $active;
-      }
-    }
-  }
-}
-
-.fixed-button {
-  position: fixed;
-  bottom: 3em;
-  right: 3em;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-
-
-  a {
-    font-size: 4em;
-    text-decoration: none;
-    color: #414141;
-
-    display: flex;
-    align-items: center;
-
-    width: 1em; height: 1em;
-    padding: 0.1em;
-    margin: 0.2em;
-
-    background-color: rgba(255,255,255,0.5);
-  }
-
-
-}
-
+@import "component/control-button";
 
 
 footer {
   background-color: rgb(245, 245, 247);
+}
 
+.footer {
   font-size: 1em;
   font-weight: normal;
   color: rgb(134, 134, 139);
 }
+
+
+// fathers of .page-container
+//#introduction,
+//#popular-picture,
+//.popular-picture-display,
+//.region-img-display,
+//header,
+//footer
+
+@mixin page-container-father {
+  display: flex;
+  justify-content: center;
+
+}
+
+body > div, header, footer, nav {
+  @include page-container-father;
+}
+
+main > * {
+  @include page-container-father;
+}
+
+.outer {
+  @include page-container-father;
+}
+

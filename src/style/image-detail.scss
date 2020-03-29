@@ -1,0 +1,126 @@
+@import "global";
+@import "./presets/values";
+
+$border-radius: 10px;
+$edge: 2em;
+
+$light-gray: #eeeeee;
+$heavy-gray: #d4d4d4;
+$dark-gray: dimgray;
+
+@mixin box-style {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  background-color: $light-gray;
+}
+@mixin button-style {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  background-color: $heavy-gray;
+  color: $dark-gray;
+}
+
+.image-information {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+
+.image img {
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+}
+
+.detail {
+  background-color: $light-gray;
+  @include box-style;
+
+  padding: 2em;
+  margin-left: $edge;
+
+}
+
+.user {
+  display: flex;
+  align-items: center;
+
+  img {
+    $radius: 20px;
+    width: 2*$radius; height: 2*$radius;
+    border-radius: $radius;
+    margin-right: 2em;
+  }
+
+  .user-name {
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+  }
+}
+
+
+// action area.
+
+.image-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: $edge;
+  @include box-style;
+}
+
+.label-section {
+  padding: 1em;
+
+  span {
+    display: block;
+
+    font-weight: bold;
+    font-size: 2em;
+  }
+
+  .labels {
+    display: flex; flex-direction: row;
+    margin: 0.3em 0;
+  }
+
+  .label {
+    @include button-style;
+    border-radius: 3px;
+
+
+    padding: 3px 5px;
+    margin-right: 1em;
+  }
+
+}
+
+.buttons {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+
+  .action {
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 0.5em 0.7em;
+    @include button-style;
+    margin: 0 0.9em;
+  }
+
+  i.fa-thumbs-up {
+    color: #ff1493;
+  }
+
+  i.fa-star {
+    color: #ffd042;
+  }
+
+  i.fa-comment {
+    color: #3b8fff;
+  }
+}
+
+
