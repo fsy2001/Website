@@ -1,58 +1,109 @@
 @import "../presets/values";
 
+$text-unit: 1em;
+
+
 nav {
-  display: flex;
-  justify-content: center;
-  background-color: #000000;
+  background-color: $nav-background;
 }
 
 .nav {
-
-
-  padding: 0.4em 0;
-
+  padding: $text-unit 0;
   @include center-row;
+}
 
+.nav-item {
+  @include center-column;
 
+  a {
+    color: $nav-text;
+    font-size: $text-unit;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.5s;
+  }
 
-  .nav-item {
-    @include center-column;
-
-    $default: #d0d0d0;
-    $hover: #ffffff;
-    $active: #ffffff;
-
-    //i {
-    //  color: $default;
-    //  padding-right: 0.5em;
-    //  transition: color 1s;
-    //}
-
+  a.current {
+    color: $nav-text-current;
+  }
+  &:hover {
     a {
-      color: $default;
-      font-size: 1.2em;
-      text-align: center;
-      text-decoration: none;
-      padding-right: 0.5em;
-      transition: color 1s;
+      color: $nav-text-active;
     }
-
-    &:hover {
-      //i {
-      //  color: $hover;
-      //}
-      a {
-        color: $hover;
-
-      }
-    }
-    &:active {
-      //i {
-      //  color: $active;
-      //}
-      a {
-        color: $active;
-      }
+    a.current {
+      color: $nav-text-current;
     }
   }
+  &:active {
+    a {
+      color: $nav-text-active;
+    }
+    a.current {
+      color: $nav-text-current;
+    }
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+
+
+@media (max-width: $mobile-width) {
+
+  // header
+  $icon-size: 1.5em;
+
+
+  .nav-mobile {
+    padding: $text-unit 0;
+    @include center-row;
+
+    i {
+      font-size: $icon-size;
+    }
+  }
+
+  .nav-mobile-item {
+    color: $nav-text;
+  }
+
+  .website-icon img {
+    width: $icon-size; height: $icon-size;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+
+
+  // body
+
+
+  #nav-bar {
+    display: none;
+  }
+
+
+  .nav {
+    padding: 0;
+    @include center-column;
+    align-items: stretch;
+  }
+
+
+  .nav:last-child {
+    border-bottom: none;
+  }
+
+  .nav-item {
+    display: block; // this makes align left.
+    padding: $text-unit / 2 0;
+
+    border-bottom: $nav-divide-line solid 2px;
+  }
+
+
 }

@@ -7,6 +7,7 @@
   padding: 30px;
   margin: 50px;
 
+
   border-radius: 10px;
   box-shadow: 0 0 70px #777;
 
@@ -21,6 +22,8 @@
             "s-1 s-2 s-3 s-4 o-1";
   }
 
+  // two sizes.
+
   .big-pic {
     width: 2 * $unit + $edge; height: 2 * $unit + $edge;
     border-radius: 3px;
@@ -31,6 +34,13 @@
     border-radius: 3px;
   }
 
+  // place pics in right block.
+
+  @for $i from 1 through 6 {
+    .s-#{$i} {
+      grid-area: s-#{$i};
+    }
+  }
 
   .b-1 {
     grid-area: b-1;
@@ -38,29 +48,5 @@
 
   .b-2 {
     grid-area: b-2;
-  }
-
-  .s-1 {
-    grid-area: s-1;
-  }
-
-  .s-2 {
-    grid-area: s-2;
-  }
-
-  .s-3 {
-    grid-area: s-3;
-  }
-
-  .s-4 {
-    grid-area: s-4;
-  }
-
-  .s-5 {
-    grid-area: s-5;
-  }
-
-  .s-6 {
-    grid-area: s-6;
   }
 }

@@ -1,0 +1,57 @@
+@import "../presets/values";
+
+header {
+  background-color: #333333;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 50%;
+
+
+  .left {
+    float: left;
+    transform: scale(0.7,0.7);
+  }
+
+  .center {
+
+  }
+
+  .right {
+    float: right;
+  }
+}
+
+.search-box {
+  background-color: $search-box;
+
+  padding: 0.2em 0 0.2em 0.5em;
+  color: $search-box-text;
+  border-radius: 0.3em;
+
+  display: flex; align-items: center;
+
+  i {
+    padding-right: 0.5em;
+  }
+
+}
+
+.search-field {
+  background: none;
+
+  &::-webkit-input-placeholder {
+    color: $search-box-text;
+  }
+
+}
+
+
+
+
+
+

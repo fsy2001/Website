@@ -11,33 +11,11 @@ body {
 
 .page-container {
   width: $page-width;
+  margin: 0 2em;
 }
 
-header {
-  background-color: #333333;
-  color: white;
-}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 50%;
-
-
-  .left {
-    float: left;
-    transform: scale(0.7,0.7);
-  }
-
-  .center {
-
-  }
-
-  .right {
-    float: right;
-  }
-}
+@import "component/header";
 
 @import "component/navigation-bar";
 
@@ -56,18 +34,10 @@ footer {
 }
 
 
-// fathers of .page-container
-//#introduction,
-//#popular-picture,
-//.popular-picture-display,
-//.region-img-display,
-//header,
-//footer
 
 @mixin page-container-father {
   display: flex;
   justify-content: center;
-
 }
 
 body > div, header, footer, nav {

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>navigator-test</title>
+    <link rel="stylesheet" href="../src/rel/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="test-navigator.css">
+    <link rel="stylesheet" href="../src/style/index.css">
+</head>
+<body>
+
+
+<nav class="outer mobile">
+    <div class="page-container nav-mobile">
+        <div class="mobile nav-mobile-item nav-chooser">
+            <i class="fa fa-navicon" onclick="clickNav()"></i>
+        </div>
+
+        <div class="mobile nav-mobile-item website-icon">
+            <img src="../img/icons/logo.svg">
+            <!--        notice!!!-->
+        </div>
+
+        <div class="mobile nav-mobile-item account">
+            <i class="fa fa-user-circle"></i>
+        </div>
+    </div>
+
+</nav>
+
+<nav class="outer">
+
+    <div class="page-container nav" id="nav-bar">
+        <div class="nav-item">
+            <a class="current" href="index.html">
+                首页
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a href="browse.html">
+                浏览
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a href="popular.html">
+                热门
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a href="search.html">
+                搜索
+            </a>
+        </div>
+
+        <div class="nav-item user-account">
+            <a href="upload.html">
+                个人中心
+            </a>
+            <div class="user-account-control">
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+<h1>
+    hello
+</h1>
+
+<script>
+    // bug: when resizing, block may cause problem.
+    function clickNav() {
+        let nav = document.getElementById("nav-bar");
+        if (nav.style.display === "block") {
+            nav.style.display = "none";
+        }
+        else {
+            nav.style.display = "block";
+        }
+    }
+
+    function userAccount_desktop() {
+
+
+
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
