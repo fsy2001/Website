@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>navigator-test</title>
-    <link rel="stylesheet" href="../src/rel/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="test-navigator.css">
-    <link rel="stylesheet" href="../src/style/index.css">
+    <link href="src/rel/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/style/login.css">
+    <script src="src/script/manipulate-element.js"></script>
+
+    <title>登录</title>
 </head>
 <body>
-
 
 <nav class="outer mobile">
     <div class="page-container nav-mobile">
@@ -17,7 +17,7 @@
         </div>
 
         <div class="mobile nav-mobile-item website-icon">
-            <img src="../img/icons/logo.svg">
+            <img src="img/icons/logo.svg">
             <!--        notice!!!-->
         </div>
 
@@ -87,17 +87,17 @@
                     <a>上传</a>
                 </span>
 
-                            <span class="user-menu-item">
+                <span class="user-menu-item">
                     <i class="fa fa-photo"></i>
                     <a>我的照片</a>
                 </span>
 
-                            <span class="user-menu-item">
+                <span class="user-menu-item">
                     <i class="fa fa-star"></i>
                     <a>我的收藏</a>
                 </span>
 
-                            <span class="user-menu-item last">
+                <span class="user-menu-item last">
                     <i class="fa fa-sign-in"></i>
                     <a>登入</a>
                 </span>
@@ -107,9 +107,53 @@
     </div>
 </nav>
 
+<main class="login-page">
+
+    <div class="login-top-bar outer">
+        <div class="page-container login-top">
+            <h4>Travel Book</h4>
+
+            <div class="login-options">
+                <a>登录</a>
+                <a>创建新账号</a>
+                <a>常见问题</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="login-main outer">
+        <div class="page-container login-main-area">
+            <h2 class="login-title">Travel Book</h2>
+            <span class="login-description">请登录账户以访问网站</span>
+            <form class="login-input">
+                <div class="login-type-box">
+                    <fieldset class="username">
+                        <input type="text" placeholder="用户名">
+                    </fieldset>
+                    <fieldset class="password">
+                        <input type="password" placeholder="密码">
+                    </fieldset>
+                </div>
+                <div class="login-checkbox">
+                    <input type="checkbox">
+                    <span>信任此浏览器</span>
+                </div>
+
+
+            </form>
+
+            <a class="forget-password">忘记密码？</a>
 
 
 
+
+        </div>
+    </div>
+
+
+
+</main>
 
 
 <footer class="outer">
@@ -196,31 +240,6 @@
         </div>
     </div>
 </footer>
-
-
-<script>
-    // bug: when resizing, block may cause problem.
-    function clickNav() {
-        let nav = document.getElementById("nav-bar");
-        if (nav.style.display === "block") {
-            nav.style.display = "none";
-        }
-        else {
-            nav.style.display = "block";
-        }
-    }
-
-    function userAccount_desktop() {
-
-
-
-    }
-
-
-</script>
-
-
-
 
 </body>
 </html>

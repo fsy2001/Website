@@ -1,0 +1,139 @@
+@import "global";
+
+$border-radius: 7px;
+
+// out
+
+// top bar.
+
+.login-top-bar {
+  background-color: rgba(255,255,255,0.5);
+
+  -webkit-backdrop-filter: blur(1em);
+  backdrop-filter: blur(1em);
+
+}
+
+.login-top {
+
+  padding: 1em 0;
+
+  h4 {
+    font-size: 2em;
+    margin: 0;
+    display: inline-block;
+
+
+  }
+
+  .login-options {
+    position: relative;
+    top: 0.5em;
+
+    display: inline-block;
+    float: right;
+
+    a {
+      padding-left: 3em;
+    }
+  }
+}
+
+@media (max-width: $medium-width) {
+  .login-top {
+    display: flex;
+    flex-direction: column;
+
+    .login-options {
+      display: inline-block;
+      float: right;
+
+      a {
+        padding-left: 0;
+        padding-right: 3em;
+      }
+    }
+  }
+
+
+}
+
+// main
+
+.login-page {
+  background-color: plum;
+  padding-bottom: 2em;
+}
+
+.login-main {
+  color: white;
+}
+
+.login-main-area {
+  @include center-column;
+}
+
+.login-title {
+  margin: 2em 0 0.2em 0;
+  font-size: 4em;
+  font-weight: bolder;
+
+}
+.login-description {
+  font-size: 1.5em;
+}
+
+.login-checkbox {
+  @include center-row;
+  justify-content: center;
+
+  span {
+    display: inline-block;
+    padding-left: 0.5em;
+  }
+
+
+}
+
+// username & password box.
+
+.login-type-box {
+  margin: 1em 0 1em 0;
+  border-radius: $border-radius;
+  background-color: white;
+
+  border: $footer-border-color solid 1px;
+
+  fieldset {
+    margin: 0;
+    border: none;
+    padding: 0;
+  }
+
+  fieldset.username {
+    border-bottom: $footer-border-color solid 1px;
+  }
+}
+
+input[type="text"], input[type="password"] {
+  border: none;
+  height: 5em; width: 30em;
+  background: none;
+  padding-left: 1em;
+}
+
+input[type="text"] {
+  border-radius: $border-radius $border-radius 0 0;
+}
+
+input[type="password"] {
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+input::placeholder {
+  font-size: 1.5em;
+}
+
+.forget-password {
+  padding-top: 4em;
+}

@@ -208,14 +208,14 @@ footer {
   border-bottom: #d2d2d7 2px solid; }
 
 .footer-section {
-  padding: 0.4em 0;
+  padding: 0.8em 0;
   margin: 0; }
   .footer-section h4 {
     color: black;
-    font-size: 0.4em;
+    font-size: 0.8em;
     text-align: left;
     font-weight: bold;
-    padding: 0.2em 0;
+    padding: 0.4em 0;
     margin: 0; }
 
 .footer-links {
@@ -225,10 +225,10 @@ footer {
   .footer-links a {
     text-decoration: none;
     color: #515154;
-    font-size: 0.4em;
+    font-size: 0.8em;
     text-align: left;
     font-weight: normal;
-    padding: 0.2em 0;
+    padding: 0.4em 0;
     margin: 0;
     display: block; }
 
@@ -240,7 +240,7 @@ footer {
 
 .footer-copyright {
   color: #86868b;
-  font-size: 0.4em;
+  font-size: 0.8em;
   text-align: left;
   font-weight: normal; }
 
@@ -254,7 +254,7 @@ footer {
     padding: 0 1em;
     border-right: #d2d2d7 2px solid;
     color: #515154;
-    font-size: 0.4em;
+    font-size: 0.8em;
     text-align: left;
     font-weight: normal; }
   .footer-other-links .last-child {
@@ -263,7 +263,7 @@ footer {
 .footer-info {
   padding: 0 1em 0 0;
   margin: 0;
-  font-size: 0.4em;
+  font-size: 0.8em;
   color: #86868b;
   font-weight: normal; }
   .footer-info span {
