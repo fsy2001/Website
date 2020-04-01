@@ -48,14 +48,11 @@ footer {
   flex-direction: column;
 
   a {
+    text-decoration: none;
     @include footer-font($footer-text);
     font-weight: normal;
     @include link-box;
     display: block;
-
-    &:hover {
-      text-decoration: $footer-text;
-    }
   }
 }
 
@@ -148,3 +145,5 @@ footer {
   }
 
 }
+
+

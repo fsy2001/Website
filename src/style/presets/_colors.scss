@@ -22,4 +22,5 @@ $nav-divide-line: rgb(66,66,69);
 $footer-text: rgb(81,81,84);
 $footer-note: rgb(134,134,139);
 $footer-background: rgb(245,245,247);
-$footer-border: rgb(210,210,215) 2px solid;
+$footer-border-color: rgb(210,210,215);
+$footer-border: $footer-border-color 2px solid;

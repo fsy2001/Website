@@ -15,7 +15,7 @@ nav {
 .nav-item {
   @include center-column;
 
-  a {
+  .nav-link {
     color: $nav-text;
     font-size: $text-unit;
     text-align: center;
@@ -23,22 +23,22 @@ nav {
     transition: color 0.5s;
   }
 
-  a.current {
+  .nav-link.current {
     color: $nav-text-current;
   }
   &:hover {
-    a {
+    .nav-link {
       color: $nav-text-active;
     }
-    a.current {
+    .nav-link.current {
       color: $nav-text-current;
     }
   }
   &:active {
-    a {
+    .nav-link {
       color: $nav-text-active;
     }
-    a.current {
+    .nav-link.current {
       color: $nav-text-current;
     }
   }
@@ -105,5 +105,147 @@ nav {
     border-bottom: $nav-divide-line solid 2px;
   }
 
+
+}
+
+// user menu
+
+.user-menu {
+  visibility: visible;
+  display: flex; flex-direction: column;
+
+  width: 7em;
+  padding: 1em;
+
+  border: $footer-border;
+  border-radius: 0.5em;
+  background-color: white;
+
+  position: absolute;
+  z-index: 100;
+  top: 5em;
+  left: 0;
+}
+
+.user-menu::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -9px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: transparent transparent $footer-border-color transparent;
+}
+
+.user-menu-item {
+  display: inline-block;
+  text-align: left;
+  color: $link-blue;
+
+  padding: 0.5em 0;
+
+  border-bottom: $footer-border;
+
+  &.last {
+    border-bottom: none;
+  }
+
+  a {
+    font-weight: lighter;
+  }
+}
+
+
+
+
+// user menu
+
+// #parent element.
+
+@media (min-width: $mobile-width) {
+
+  .user-account {
+    position: relative;
+
+    &:hover .user-menu {
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .user-account-mobile {
+    position: relative;
+
+    &:hover .user-menu {
+      visibility: visible;
+    }
+
+  }
+
+
+}
+
+
+
+.user-menu {
+  visibility: hidden;
+
+  display: flex; flex-direction: column;
+
+  width: 7em;
+  padding: 1em;
+
+  border: $footer-border;
+  border-radius: 0.5em;
+  background-color: white;
+
+  position: absolute;
+  z-index: 100;
+  top: 2em;
+  left: -4em;
+}
+
+
+
+.user-menu::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -9px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: transparent transparent $footer-border-color transparent;
+}
+
+.user-menu-item {
+  display: inline-block;
+  text-align: left;
+  color: $link-blue;
+
+  padding: 0.5em 0;
+
+  border-bottom: $footer-border;
+
+  &.last {
+    border-bottom: none;
+  }
+
+  a {
+    font-weight: lighter;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .user-menu {
+    left: -6em;
+  }
+
+  .user-menu::after {
+    left: 74%;
+
+  }
 
 }
