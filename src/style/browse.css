@@ -138,7 +138,7 @@ nav {
 .user-menu-item {
   display: inline-block;
   text-align: left;
-  color: #2868c5;
+  color: #2390c5;
   padding: 0.5em 0;
   border-bottom: #d2d2d7 2px solid; }
   .user-menu-item.last {
@@ -183,7 +183,7 @@ nav {
 .user-menu-item {
   display: inline-block;
   text-align: left;
-  color: #2868c5;
+  color: #2390c5;
   padding: 0.5em 0;
   border-bottom: #d2d2d7 2px solid; }
   .user-menu-item.last {
@@ -269,7 +269,7 @@ footer {
   .footer-info span {
     font-weight: normal;
     display: inline-block;
-    color: #2868c5; }
+    color: #2390c5; }
 
 @media (max-width: 726px) {
   .footer-notes {
