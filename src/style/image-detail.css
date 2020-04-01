@@ -111,6 +111,97 @@ nav {
     display: block;
     padding: 0.5em 0;
     border-bottom: #424245 solid 2px; } }
+footer {
+  background-color: #f5f5f7;
+  padding-bottom: 1em; }
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: #d2d2d7 2px solid; }
+
+.footer-section {
+  padding: 0.4em 0;
+  margin: 0; }
+  .footer-section h4 {
+    color: black;
+    font-size: 0.4em;
+    text-align: left;
+    font-weight: bold;
+    padding: 0.2em 0;
+    margin: 0; }
+
+.footer-links {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column; }
+  .footer-links a {
+    color: #515154;
+    font-size: 0.4em;
+    text-align: left;
+    font-weight: normal;
+    padding: 0.2em 0;
+    margin: 0;
+    display: block; }
+    .footer-links a:hover {
+      text-decoration: #515154; }
+
+.footer-notes {
+  margin: 0.4em 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; }
+
+.footer-copyright {
+  color: #86868b;
+  font-size: 0.4em;
+  text-align: left;
+  font-weight: normal; }
+
+.footer-other-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row; }
+  .footer-other-links a {
+    display: block;
+    padding: 0 1em;
+    border-right: #d2d2d7 2px solid;
+    color: #515154;
+    font-size: 0.4em;
+    text-align: left;
+    font-weight: normal; }
+  .footer-other-links .last-child {
+    border-right: none; }
+
+.footer-info {
+  padding: 0 1em 0 0;
+  margin: 0;
+  font-size: 0.4em;
+  color: #86868b;
+  font-weight: normal; }
+  .footer-info span {
+    font-weight: normal;
+    display: inline-block;
+    color: #2868c5; }
+
+@media (max-width: 726px) {
+  .footer-notes {
+    flex-direction: column; }
+
+  .footer-other-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left; }
+    .footer-other-links .first-child {
+      padding-left: 0; } }
+@media (max-width: 500px) {
+  .footer-section {
+    border-bottom: #d2d2d7 2px solid; }
+
+  .footer-main, .footer-notes {
+    flex-direction: column; } }
 .fixed-button {
   position: fixed;
   bottom: 3em;

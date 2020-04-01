@@ -1,7 +1,6 @@
 $page-width: 70em;
 
 
-
 body {
   padding: 0; margin: 0;
   font-family: sans-serif;
@@ -18,6 +17,8 @@ body {
 @import "component/header";
 
 @import "component/navigation-bar";
+
+@import "component/footer";
 
 
 @import "component/control-button";

@@ -1,4 +1,150 @@
 // colors
 
+@import "../presets/values";
+
+$footer-font-size: 0.4em;
+$link-interval: $footer-font-size / 2;
+@mixin link-box {
+  padding: $link-interval 0;
+  margin: 0;
+}
+@mixin footer-font($color) {
+  color: $color;
+  font-size: $footer-font-size;
+  text-align: left;
+}
 
 
+footer {
+  background-color: $footer-background;
+  padding-bottom: 1em;
+}
+
+// upper section
+
+.footer-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  border-bottom: $footer-border;
+}
+
+
+.footer-section {
+  padding: $footer-font-size 0; margin: 0;
+
+  h4 {
+    @include footer-font(black);
+    font-weight: bold;
+    @include link-box;
+  }
+
+}
+
+.footer-links {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+
+  a {
+    @include footer-font($footer-text);
+    font-weight: normal;
+    @include link-box;
+    display: block;
+
+    &:hover {
+      text-decoration: $footer-text;
+    }
+  }
+}
+
+// lower section.
+
+// #1
+
+.footer-notes {
+  margin: 0.4em 0; padding: 0;
+
+  display: flex;
+  flex-direction: row;
+
+}
+
+.footer-copyright {
+  @include footer-font($footer-note);
+  font-weight: normal;
+}
+
+
+
+.footer-other-links {
+  @include center-row;
+
+  a {
+    display: block;
+    padding: 0 1em;
+    border-right: $footer-border;
+
+
+    @include footer-font($footer-text);
+    font-weight: normal;
+  }
+
+  // why last-chile pseudo element doesn't work?
+  .last-child {
+    border-right: none;
+  }
+
+
+
+}
+
+// #2
+
+.footer-info {
+  padding: 0 1em 0 0; margin: 0;
+  font-size: $footer-font-size;
+  color: $footer-note;
+  font-weight: normal;
+
+
+  span {
+    font-weight: normal;
+    display: inline-block;
+    color: $link-blue;
+  }
+}
+
+
+// mobile
+
+@media (max-width: $medium-width) {
+  .footer-notes {
+    flex-direction: column;
+  }
+
+  .footer-other-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    .first-child {
+      padding-left: 0;
+    }
+  }
+
+}
+
+@media (max-width: $mobile-width) {
+
+  .footer-section {
+    border-bottom: $footer-border;
+  }
+
+
+  .footer-main, .footer-notes {
+    flex-direction: column;
+  }
+
+}
