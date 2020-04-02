@@ -140,6 +140,10 @@ input[type="tel"] {
     background-color: $button-blue;
     padding: 0.3em 0.7em 0.3em 0.7em;
     border-radius: 7px;
+
+    &:hover {
+      background-color: $button-blue-hover;
+    }
   }
 
   margin-bottom: 1em;

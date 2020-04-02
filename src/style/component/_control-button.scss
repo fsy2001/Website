@@ -1,3 +1,7 @@
+@import "../presets/values";
+
+$control-button-unit: 1em;
+
 .fixed-button {
   position: fixed;
   bottom: 3em;
@@ -10,19 +14,43 @@
 
 
   a {
-    font-size: 4em;
-    text-decoration: none;
-    color: #414141;
+    position: relative;
 
-    display: flex;
+    text-align: center;
+    font-size: $control-button-unit;
+    text-decoration: none;
+    color: white;
+
+    display: block;
     align-items: center;
 
-    width: 1em; height: 1em;
-    padding: 0.1em;
-    margin: 0.2em;
+    width: $control-button-unit; height: $control-button-unit;
 
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(16, 16, 16, 0.2);
+    border-radius: 0.1 * $control-button-unit;
+
+    @include blur(5px);
+
+    margin: 0.1 * $control-button-unit
   }
 
+  i.fa-chevron-up {
+    transform: scale(0.8);
 
+    position: absolute;
+    top: -0.05 * $control-button-unit;
+    left: 0;
+  }
+
+  i.fa-refresh {
+    transform: scale(0.8);
+
+    position: absolute;
+    top: 0 * $control-button-unit;
+    left: 0.07 * $control-button-unit;
+  }
+}
+
+.fixed-button {
+  transform: scale(2);
 }

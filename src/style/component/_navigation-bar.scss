@@ -234,7 +234,13 @@ nav {
   }
 
   a {
+    text-decoration: none;
+    color: $link-blue;
     font-weight: lighter;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
