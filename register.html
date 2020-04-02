@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <link href="src/rel/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="src/style/login.css">
+    <link rel="stylesheet" href="src/style/register.css">
     <script src="src/script/manipulate-element.js"></script>
 
-    <title>登录</title>
+    <title>创建新账号</title>
 </head>
 <body>
 
@@ -114,8 +114,8 @@
             <h4>Travel Book</h4>
 
             <div class="login-options">
-                <a class="current" href="login.html">登录</a>
-                <a href="register.html">创建新账号</a>
+                <a href="login.html">登录</a>
+                <a class="current" href="register.html">创建新账号</a>
                 <a>常见问题</a>
             </div>
         </div>
@@ -125,36 +125,83 @@
     <div class="login-main outer">
         <div class="page-container login-main-area">
             <h2 class="login-title">Travel Book</h2>
-            <span class="login-description">请登录账户以访问网站</span>
-            <form class="login-input">
-                <div class="login-type-box">
-                    <fieldset class="username">
-                        <input type="text" placeholder="用户名">
-                    </fieldset>
-                    <fieldset class="password">
-                        <input type="password" placeholder="密码">
-                        <a class="login-confirm" href="index.html">确认</a>
-                    </fieldset>
-                </div>
-                <div class="login-checkbox">
-                    <input type="checkbox">
-                    <span>信任此浏览器</span>
-                </div>
-
-
-            </form>
-
-            <a class="forget-password" href="">忘记密码？</a>
-
-
-
 
         </div>
     </div>
 
-
-
 </main>
+
+<form class="register outer">
+    <div class="page-container register-main">
+        <span class="register-intro">
+        只需一个账户，即可访问 Travel Book 的全部内容。<br>
+        已注册账户？<a href="login.html">在此登录</a>。
+
+        </span>
+
+        <fieldset class="register-info">
+            <div class="register-restrict">
+                <div class="input-box">
+                    <input type="text" placeholder="用户名">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" placeholder="密码">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="确认密码">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="register-info">
+            <div class="register-restrict">
+                <div class="input-box">
+                    <input type="email" placeholder="邮箱">
+                </div>
+                <div class="input-box">
+                    <input type="tel" placeholder="电话">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <fieldset class="register-info">
+            <div class="register-restrict recaptcha">
+                <div class="recaptcha-image">
+                    <img src="http://placekitten.com/60/30">
+                </div>
+
+                <div class="recaptcha-input">
+                    <div class="input-box">
+                        <input type="text" placeholder="输入图中的字符">
+                    </div>
+                    <span>
+                        <i class="fa fa-refresh"></i>
+                        新代码
+                    </span>
+                </div>
+
+
+            </div>
+
+        </fieldset>
+
+        <fieldset class="confirm">
+            <div class="register-restrict register-confirm">
+                <p>
+                    注册即代表同意<a>条款和条件</a>。
+                </p>
+                <input type="submit">
+
+            </div>
+
+        </fieldset>
+    </div>
+
+</form>
+
 
 
 <footer class="outer">

@@ -8,36 +8,6 @@ body {
   width: 70em;
   margin: 0 2em; }
 
-header {
-  background-color: #333333;
-  color: white; }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 50%; }
-  .header .left {
-    float: left;
-    transform: scale(0.7, 0.7); }
-  .header .right {
-    float: right; }
-
-.search-box {
-  background-color: #1d1d1f;
-  padding: 0.2em 0 0.2em 0.5em;
-  color: #69696e;
-  border-radius: 0.3em;
-  display: flex;
-  align-items: center; }
-  .search-box i {
-    padding-right: 0.5em; }
-
-.search-field {
-  background: none; }
-  .search-field::-webkit-input-placeholder {
-    color: #69696e; }
-
 nav {
   background-color: #303030; }
 
@@ -200,6 +170,9 @@ nav {
 footer {
   background-color: #f5f5f7;
   padding-bottom: 1em; }
+
+footer a:hover {
+  text-decoration: underline; }
 
 .footer-main {
   display: flex;

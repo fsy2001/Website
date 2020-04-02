@@ -20,6 +20,12 @@ footer {
   padding-bottom: 1em;
 }
 
+footer {
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 // upper section
 
 .footer-main {

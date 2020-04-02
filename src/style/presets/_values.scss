@@ -17,6 +17,14 @@
 }
 
 
+// decoration
+
+@mixin blur($size) {
+  -webkit-backdrop-filter: blur($size);
+  backdrop-filter: blur($size);
+}
+
+
 $shadow: 0 0 10px lightgray;
 
 $medium-width: 726px;

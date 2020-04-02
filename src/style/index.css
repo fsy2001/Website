@@ -8,36 +8,6 @@ body {
   width: 70em;
   margin: 0 2em; }
 
-header {
-  background-color: #333333;
-  color: white; }
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  opacity: 50%; }
-  .header .left {
-    float: left;
-    transform: scale(0.7, 0.7); }
-  .header .right {
-    float: right; }
-
-.search-box {
-  background-color: #1d1d1f;
-  padding: 0.2em 0 0.2em 0.5em;
-  color: #69696e;
-  border-radius: 0.3em;
-  display: flex;
-  align-items: center; }
-  .search-box i {
-    padding-right: 0.5em; }
-
-.search-field {
-  background: none; }
-  .search-field::-webkit-input-placeholder {
-    color: #69696e; }
-
 nav {
   background-color: #303030; }
 
@@ -201,6 +171,9 @@ footer {
   background-color: #f5f5f7;
   padding-bottom: 1em; }
 
+footer a:hover {
+  text-decoration: underline; }
+
 .footer-main {
   display: flex;
   flex-direction: row;
@@ -326,18 +299,18 @@ main > * {
   display: flex;
   justify-content: center; }
 
-section {
-  padding: 1em 2em;
-  margin: 0;
+.index-block {
   text-align: center;
   color: black;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: bold; }
-  section img {
-    width: 7em;
-    height: 7em; }
-  section .subtitle {
-    white-space: pre-line; }
+
+.index-title-img {
+  width: 7em;
+  height: 7em; }
+
+.subtitle {
+  white-space: pre-line; }
 
 #introduction {
   background-image: linear-gradient(141deg, #d6cf36 0%, #1fc8db 51%, #2cb5e8 75%);

@@ -1,85 +1,12 @@
 @import "global";
+@import "component/login-common";
 
-$border-radius: 7px;
 
 // out
 
-// top bar.
-
-.login-top-bar {
-  background-color: rgba(255,255,255,0.5);
-
-
-  -webkit-backdrop-filter: blur(1em);
-  backdrop-filter: blur(1em);
-
-}
-
-.login-top {
-
-  padding: 1em 0;
-
-  h4 {
-    font-size: 2em;
-    margin: 0;
-    display: inline-block;
-
-
-  }
-
-  .login-options {
-    position: relative;
-    top: 0.5em;
-
-    display: inline-block;
-    float: right;
-
-    a {
-      padding-left: 3em;
-    }
-  }
-}
-
-@media (max-width: $medium-width) {
-  .login-top {
-    display: flex;
-    flex-direction: column;
-
-    .login-options {
-      display: inline-block;
-      float: right;
-
-      a {
-        padding-left: 0;
-        padding-right: 3em;
-      }
-    }
-  }
-
-
-}
 
 // main
 
-.login-page {
-  background: url("http://placekitten.com/1500/500") no-repeat center;
-  padding-bottom: 2em;
-}
-
-.login-main {
-  color: white;
-}
-
-.login-main-area {
-  @include center-column;
-}
-
-.login-title {
-  margin: 2em 0 0.2em 0;
-  font-size: 4em;
-  font-weight: bolder;
-
-}
 .login-description {
   font-size: 1.5em;
 }
@@ -92,24 +19,18 @@ $border-radius: 7px;
     display: inline-block;
     padding-left: 0.5em;
   }
-
-
 }
 
 // username & password box.
 
 .login-type-box {
   margin: 1em 0 1em 0;
-  border-radius: $border-radius;
+  border-radius: $input-radius;
   background-color: white;
 
   border: $footer-border-color solid 1px;
 
-  fieldset {
-    margin: 0;
-    border: none;
-    padding: 0;
-  }
+
 
   fieldset.username {
     border-bottom: $footer-border-color solid 1px;
@@ -123,12 +44,19 @@ input[type="text"], input[type="password"] {
   padding-left: 1em;
 }
 
+@media (max-width: $mobile-width) {
+  input[type="text"], input[type="password"] {
+    width: 20em;
+  }
+
+}
+
 input[type="text"] {
-  border-radius: $border-radius $border-radius 0 0;
+  border-radius: $input-radius $input-radius 0 0;
 }
 
 input[type="password"] {
-  border-radius: 0 0 $border-radius $border-radius;
+  border-radius: 0 0 $input-radius $input-radius;
 }
 
 .login-confirm {
@@ -142,9 +70,12 @@ input::placeholder {
   font-size: 1.5em;
 }
 
+input[type="text"]:focus, input[type="password"] {
+  border: none;
+}
+
 .forget-password {
   padding-top: 4em;
   color: white;
   text-decoration: none;
-
 }

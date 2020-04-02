@@ -1,0 +1,147 @@
+@import "global";
+@import "component/login-common";
+
+@mixin input-base {
+  margin: 0;
+  background: none;
+  border: none;
+  height: 5em;
+
+  &::placeholder {
+    font-size: 1.5em;
+  }
+}
+
+@mixin input-box {
+  padding-left: 0.5em;
+  @include center-row;
+
+  width: 100%;
+  border-radius: $input-radius;
+  border: $footer-border-color solid 1px;
+}
+
+
+// layout
+
+.register-main {
+  @include center-column;
+}
+
+.register-restrict {
+  display: block;
+  margin: 0 2em 0 2em;
+  width: $page-width / 2;
+}
+
+@media (max-width: $medium-width) {
+  .register-restrict {
+    width: 20em;
+  }
+}
+
+
+.login-title {
+  margin: 0.2em 0 0.2em 0;
+}
+
+
+
+// main
+.register-intro {
+  padding: 1em 0 1em 0;
+
+  text-align: center;
+
+  a {
+    color: $link-blue;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.register-info {
+  border: none;
+  border-bottom: $footer-border;
+
+}
+
+input[type="text"], input[type="password"], input[type="email"],
+input[type="tel"] {
+  @include input-base;
+}
+
+.input-box {
+  @include input-box;
+  margin: 1em 0 1em 0;
+}
+
+// #recaptcha
+.recaptcha {
+  display: flex; flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1em;
+}
+
+.recaptcha-image {
+  margin-top: 1em;
+}
+
+.recaptcha-input {
+  float: right;
+  width: 60%;
+
+  span {
+    color: $link-blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: $medium-width) {
+  .recaptcha {
+    flex-direction: column;
+  }
+
+  .recaptcha-input {
+    width: 100%;
+  }
+
+}
+
+// confirm
+
+.register-confirm {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+
+
+
+  p {
+    color: $footer-text;
+    a {
+      color: $link-blue;
+    }
+  }
+
+  input[type="submit"] {
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    background-color: $button-blue;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-radius: 7px;
+  }
+
+  margin-bottom: 1em;
+}
+
