@@ -1,25 +1,7 @@
 @import "global";
 @import "component/login-common";
 
-@mixin input-base {
-  margin: 0;
-  background: none;
-  border: none;
-  height: 5em;
 
-  &::placeholder {
-    font-size: 1.5em;
-  }
-}
-
-@mixin input-box {
-  padding-left: 0.5em;
-  @include center-row;
-
-  width: 100%;
-  border-radius: $input-radius;
-  border: $footer-border-color solid 1px;
-}
 
 
 // layout
@@ -76,7 +58,6 @@ input[type="tel"] {
 
 .input-box {
   @include input-box;
-  margin: 1em 0 1em 0;
 }
 
 // #recaptcha
@@ -111,7 +92,6 @@ input[type="tel"] {
   .recaptcha-input {
     width: 100%;
   }
-
 }
 
 // confirm
@@ -134,16 +114,7 @@ input[type="tel"] {
   }
 
   input[type="submit"] {
-    color: white;
-    font-size: 1.2em;
-    border: none;
-    background-color: $button-blue;
-    padding: 0.3em 0.7em 0.3em 0.7em;
-    border-radius: 7px;
-
-    &:hover {
-      background-color: $button-blue-hover;
-    }
+    @include button;
   }
 
   margin-bottom: 1em;

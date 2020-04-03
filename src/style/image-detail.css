@@ -201,7 +201,7 @@ footer a:hover {
   flex-direction: column; }
   .footer-links a {
     text-decoration: none;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal;
@@ -230,7 +230,7 @@ footer a:hover {
     display: block;
     padding: 0 1em;
     border-right: #d2d2d7 2px solid;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal; }
@@ -327,12 +327,12 @@ main > * {
 
 .image img {
   border-radius: 10px;
-  box-shadow: 0 0 10px lightgray; }
+  box-shadow: 0 0 10px #919191; }
 
 .detail {
   background-color: #eeeeee;
   border-radius: 10px;
-  box-shadow: 0 0 10px lightgray;
+  box-shadow: 0 0 10px #919191;
   background-color: #eeeeee;
   padding: 2em;
   margin-left: 2em; }
@@ -356,7 +356,7 @@ main > * {
   justify-content: space-between;
   margin-top: 2em;
   border-radius: 10px;
-  box-shadow: 0 0 10px lightgray;
+  box-shadow: 0 0 10px #919191;
   background-color: #eeeeee; }
 
 .label-section {
@@ -371,7 +371,7 @@ main > * {
     margin: 0.3em 0; }
   .label-section .label {
     border-radius: 10px;
-    box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px #919191;
     background-color: #d4d4d4;
     color: dimgray;
     border-radius: 3px;
@@ -387,7 +387,7 @@ main > * {
     font-weight: bold;
     padding: 0.5em 0.7em;
     border-radius: 10px;
-    box-shadow: 0 0 10px lightgray;
+    box-shadow: 0 0 10px #919191;
     background-color: #d4d4d4;
     color: dimgray;
     margin: 0 0.9em; }

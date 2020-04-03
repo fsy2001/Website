@@ -201,7 +201,7 @@ footer a:hover {
   flex-direction: column; }
   .footer-links a {
     text-decoration: none;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal;
@@ -230,7 +230,7 @@ footer a:hover {
     display: block;
     padding: 0 1em;
     border-right: #d2d2d7 2px solid;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal; }
@@ -523,7 +523,7 @@ footer a:hover {
   flex-direction: column; }
   .footer-links a {
     text-decoration: none;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal;
@@ -552,7 +552,7 @@ footer a:hover {
     display: block;
     padding: 0 1em;
     border-right: #d2d2d7 2px solid;
-    color: #515154;
+    color: #6f6f73;
     font-size: 0.8em;
     text-align: left;
     font-weight: normal; }
@@ -747,6 +747,7 @@ input[type="tel"] {
     font-size: 1.5em; }
 
 .input-box {
+  margin: 1em 0 1em 0;
   padding-left: 0.5em;
   display: flex;
   justify-content: space-between;
@@ -754,8 +755,7 @@ input[type="tel"] {
   flex-direction: row;
   width: 100%;
   border-radius: 7px;
-  border: #d2d2d7 solid 1px;
-  margin: 1em 0 1em 0; }
+  border: #d2d2d7 solid 1px; }
 
 .recaptcha {
   display: flex;
@@ -786,7 +786,7 @@ input[type="tel"] {
   justify-content: center;
   margin-bottom: 1em; }
   .register-confirm p {
-    color: #515154; }
+    color: #6f6f73; }
     .register-confirm p a {
       color: #2390c5; }
   .register-confirm input[type="submit"] {

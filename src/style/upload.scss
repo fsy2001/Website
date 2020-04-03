@@ -1,0 +1,176 @@
+@import "global";
+@import "presets/values";
+
+
+// title
+.upload-title-area {
+  @include center-column;
+
+  img {
+    width: 9em; height: 9em;
+    padding-top: 1em;
+  }
+}
+
+.upload-title {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  color: black;
+
+  margin: 0.5em 0 0.5em 0;
+}
+
+@media (max-width: $medium-width) {
+  .upload-title-area {
+
+    img {
+      width: 6em; height: 6em;
+      padding-top: 1em;
+    }
+  }
+  .upload-title {
+    font-size: 3em;
+  }
+}
+
+
+// main
+
+.upload-area {
+  margin-bottom: 2em;
+}
+
+.upload-restrict {
+  display: block;
+  margin: 0 2em 0 2em;
+  width: $page-width / 2;
+}
+
+@media (max-width: $medium-width) {
+  .upload-restrict {
+    width: 20em;
+  }
+}
+
+// image
+
+.upload-img-area {
+  @include center-column;
+
+  img {
+    // display: none;
+
+    margin: 1em;
+    border-radius: 7px;
+    box-shadow: $shadow;
+  }
+
+  input[type="file"] {
+    font-size: 1.2em;
+    padding: 0.3em 0.7em 0.3em 0.7em;
+    border-radius: 7px;
+
+    color: black;
+    background-color: white;
+    border: 1px solid $footer-border-color;
+  }
+}
+
+.upload-img-description {
+  @include center-column;
+  justify-content: center;
+
+  margin: 1em;
+  padding: 1em;
+  height: 20em; width: 80%;
+
+  border-radius: 2em;
+  border: 4px dashed $footer-border-color;
+
+  i, span {
+    display: block;
+    color: $footer-border-color;
+  }
+
+
+  span {
+    font-size: 1.2em;
+
+    code {
+      font-size: 1.2em;
+    }
+  }
+}
+
+
+
+
+
+// box
+
+
+.upload-input-description {
+  font-size: 0.8em;
+  font-weight: bold;
+
+  color: $nav-background;
+}
+
+
+.input-box {
+  @include input-box;
+  margin-top: 0;
+
+  input[type="text"], textarea {
+    @include input-base;
+    width: 100%;
+  }
+
+  textarea {
+    height: 15em; width: 100%;
+    padding-top: 1em;
+  }
+}
+
+// areas
+
+.upload-detail {
+  display: flex; flex-direction: row;
+  justify-content: space-between;
+
+  .input-box {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+@media (min-width: $medium-width) {
+  .upload-detail .upload-input-unit {
+    width: 15em;
+  }
+
+
+}
+
+@media (max-width: $medium-width) {
+  .upload-detail {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.upload-submit {
+  display: flex;
+  justify-content: center;
+
+  input[type="submit"] {
+    @include button;
+
+  }
+}
+
+

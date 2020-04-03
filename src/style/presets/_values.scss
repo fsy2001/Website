@@ -24,10 +24,48 @@
   backdrop-filter: blur($size);
 }
 
+@mixin button {
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  background-color: $button-blue;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  border-radius: 7px;
 
-$shadow: 0 0 10px lightgray;
+  &:hover {
+    background-color: $button-blue-hover;
+  }
+}
+
+
+$shadow: 0 0 10px #919191;
 
 $medium-width: 726px;
 $mobile-width: 500px;
 
 @import "colors";
+
+// input-box
+
+$input-radius: 7px;
+
+@mixin input-base {
+  margin: 0;
+  background: none;
+  border: none;
+  height: 5em;
+
+  &::placeholder {
+    font-size: 1.5em;
+  }
+}
+
+@mixin input-box {
+  margin: 1em 0 1em 0;
+  padding-left: 0.5em;
+  @include center-row;
+
+  width: 100%;
+  border-radius: $input-radius;
+  border: $footer-border-color solid 1px;
+}

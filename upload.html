@@ -1,10 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>HTML5上传图片并预览</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="src/rel/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style/upload.css">
+
+    <script src="src/rel/jquery-3.4.1.slim.min.js"></script>
+
 </head>
 <body>
 
+<nav class="outer mobile">
+    <div class="page-container nav-mobile">
+        <div class="mobile nav-mobile-item nav-chooser">
+            <i class="fa fa-navicon" onclick="clickNav()"></i>
+        </div>
+
+        <div class="mobile nav-mobile-item website-icon">
+            <img src="img/icons/logo.svg">
+            <!--        notice!!!-->
+        </div>
+
+        <div class="mobile nav-mobile-item user-account-mobile">
+            <i class="fa fa-user-circle"></i>
+            <div class="user-menu">
+                <span class="user-menu-item">
+                    <i class="fa fa-upload"></i>
+                    <a>上传</a>
+                </span>
+
+                <span class="user-menu-item">
+                    <i class="fa fa-photo"></i>
+                    <a>我的照片</a>
+                </span>
+
+                <span class="user-menu-item">
+                    <i class="fa fa-star"></i>
+                    <a>我的收藏</a>
+                </span>
+
+                <span class="user-menu-item last">
+                    <i class="fa fa-sign-in"></i>
+                    <a href="login.html">登入</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+</nav>
+
+<nav class="outer">
+
+    <div class="page-container nav" id="nav-bar">
+        <div class="nav-item">
+            <a class="nav-link" href="index.html">
+                首页
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a class="nav-link" href="browse.html">
+                浏览
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a class="nav-link" href="popular.html">
+                热门
+            </a>
+        </div>
+
+        <div class="nav-item">
+            <a class="nav-link" href="search.html">
+                搜索
+            </a>
+        </div>
+
+        <div class="nav-item user-account">
+            <a class="nav-link" href="upload.html">
+                个人中心
+            </a>
+
+            <div class="user-menu">
+                <span class="user-menu-item">
+                    <i class="fa fa-upload"></i>
+                    <a>上传</a>
+                </span>
+
+                <span class="user-menu-item">
+                    <i class="fa fa-photo"></i>
+                    <a>我的照片</a>
+                </span>
+
+                <span class="user-menu-item">
+                    <i class="fa fa-star"></i>
+                    <a>我的收藏</a>
+                </span>
+
+                <span class="user-menu-item last">
+                    <i class="fa fa-sign-in"></i>
+                    <a href="login.html">登入</a>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+<div class="outer">
+    <div class="page-container upload-title-area">
+        <img src="img/icons/upload.svg">
+        <h2 class="upload-title">上传图片</h2>
+    </div>
+</div>
+
+
+<form class="upload-area outer" name="form0" id="form0">
+    <div class="page-container upload-restrict">
+
+        <div class="upload-img-area">
+            <div class="upload-img-description" id="pre-upload">
+                <i class="fa fa-5x fa-image"></i>
+                <span>
+                    支持 <code>jpg, gif, png, svg</code> 格式的图片。
+                </span>
+
+            </div>
+
+            <img src="http://placekitten.com/200/200" id="img0" style="width: 20rem;height: 15rem;">
+            <input type="file" name="file0" id="file0" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg"/><br>
+
+
+        </div>
+
+
+
+        <div class="upload-input-unit">
+            <span class="upload-input-description">标题</span>
+            <div class="input-box">
+                <input type="text" placeholder="请输入标题">
+            </div>
+        </div>
+
+        <div class="upload-input-unit">
+            <span class="upload-input-description">描述</span>
+            <div class="input-box">
+                <textarea placeholder="请描述一下这张图片"></textarea>
+            </div>
+        </div>
+
+        <div class="upload-detail">
+            <div class="upload-input-unit">
+                <span class="upload-input-description">拍摄国家</span>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入拍摄所在的国家 / 地区">
+                </div>
+            </div>
+
+            <div class="upload-input-unit">
+                <span class="upload-input-description">城市</span>
+                <div class="input-box">
+                    <input type="text" placeholder="请输入拍摄所在的城市">
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-submit">
+            <input type="submit">
+        </div>
+    </div>
+</form>
+
+<footer class="outer">
+    <div class="page-container footer">
+        <div class="footer-main">
+            <div class="footer-1">
+
+                <section class="footer-section">
+                    <h4>网址导航</h4>
+                    <div class="footer-links">
+                        <a>主页</a>
+                        <a>浏览</a>
+                        <a>搜索</a>
+                        <a>热门</a>
+                    </div>
+                </section>
+
+
+            </div>
+
+            <div class="footer-2">
+
+                <section class="footer-section">
+                    <h4>服务</h4>
+                    <div class="footer-links">
+                        <a>上传</a>
+                        <a>管理照片</a>
+                    </div>
+                </section>
+
+                <section class="footer-section">
+                    <h4>账户</h4>
+                    <div class="footer-links">
+                        <a>管理账户</a>
+                        <a>修改密码</a>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="footer-3">
+                <section class="footer-section">
+                    <h4>支持</h4>
+                    <div class="footer-links">
+                        <a>账号找回</a>
+                        <a>注销</a>
+                        <a>使用教程</a>
+                    </div>
+                </section>
+            </div>
+
+            <div class="footer-4">
+                <section class="footer-section">
+                    <h4>关于</h4>
+                    <div class="footer-links">
+                        <a>联系我们</a>
+                        <a>公告栏</a>
+                        <a>使用说明</a>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+        <div class="footer-others">
+            <section class="footer-notes">
+                <span class="footer-copyright">
+                    Copyright © 2020 fsy2001. 保留所有权利。
+                </span>
+
+                <div class="footer-other-links">
+                    <a class="first-child">隐私政策</a>
+                    <a>使用条款</a>
+                    <a>法律信息</a>
+                    <a class="last-child">网站地图</a>
+                </div>
+            </section>
+
+            <section class="footer-info">
+                沪ICP备19302010003       联系方式：<span>fsy2001@outlook.com</span>
+            </section>
+
+        </div>
+    </div>
+</footer>
+
+<script src="src/script/preview-img.js"></script>
 </body>
 </html>
