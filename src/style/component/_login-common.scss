@@ -80,7 +80,12 @@ fieldset {
 // main
 
 .login-page {
-  background: url("http://placekitten.com/1500/500") no-repeat center;
+  // relative path according to css (the final version), not scss.
+  background: url("../../img/bodyparts/Catalina.jpg") no-repeat top center;
+
+  background-origin: border-box;
+  background-size: cover;
+
   padding-bottom: 2em;
 }
 

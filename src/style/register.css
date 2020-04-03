@@ -686,7 +686,9 @@ fieldset {
   .login-options a {
     padding-right: 1.5em; } }
 .login-page {
-  background: url("http://placekitten.com/1500/500") no-repeat center;
+  background: url("../../img/bodyparts/Catalina.jpg") no-repeat top center;
+  background-origin: border-box;
+  background-size: cover;
   padding-bottom: 2em; }
 
 .login-main {
