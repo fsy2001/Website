@@ -37,6 +37,12 @@
   }
 }
 
+@mixin square-img($size) {
+  object-fit: cover;
+  width: $size;
+  height: $size;
+}
+
 
 $shadow: 0 0 10px #919191;
 

@@ -750,5 +750,104 @@ fieldset {
 @media (max-width: 500px) {
   .search-option-box {
     width: 10em; } }
+.search-result-box {
+  display: flex;
+  flex-direction: column; }
+
+.search-result-title {
+  width: 100%;
+  border-bottom: #d2d2d7 1px solid; }
+
+.search-result-description {
+  width: 100%;
+  padding-top: 0.3em; }
+  .search-result-description span {
+    color: #6f6f73; }
+
+.search-result-main-box {
+  padding: 3em 0 3em 0; }
+
+.search-entry {
+  background-color: #f5f5f7;
+  padding: 2em;
+  border-radius: 7px; }
+
+.img-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left; }
+  .img-content img {
+    display: block; }
+
+.search-square-img {
+  object-fit: cover;
+  width: 30em;
+  height: 30em;
+  border-radius: 7px; }
+
+.img-detail {
+  margin-left: 2em; }
+
+.img-detail-title {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 3em;
+  border-bottom: #d2d2d7 1px solid;
+  margin-bottom: 0.3em; }
+
+.img-detail-upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em; }
+
+.img-detail-upload-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  .img-detail-upload-user img {
+    border-radius: 30px;
+    padding-right: 0.7em; }
+  .img-detail-upload-user span {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #86868b; }
+
+.img-detail-upload-date {
+  color: #86868b;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.img-detail-description {
+  font-size: 1em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden; }
+
+.img-detail-location {
+  float: right;
+  padding-top: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #86868b; }
+
+.img-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2em; }
+  .img-actions span {
+    transform: scale(1.5); }
+  .img-actions .thumb-up {
+    color: deeppink; }
+  .img-actions .like {
+    color: #ffce23; }
+  .img-actions .share {
+    color: #0d96db; }
+  .img-actions .detail {
+    color: gray; }
 
 /*# sourceMappingURL=search.css.map */
