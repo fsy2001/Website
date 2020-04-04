@@ -22,8 +22,8 @@
             <h2 class="login-title">搜索 Travel Book</h2>
             <span class="login-description">查找您喜爱的图片</span>
             <div class="search-option-box">
-                <span class="search-option" id="by-title">按标题</span>
-                <span class="search-option" id="by-description">按描述</span>
+                <span class="search-option" id="by-title" onclick="searchByTitle()">按标题</span>
+                <span class="search-option" id="by-description" onclick="searchByDescription()">按描述</span>
             </div>
             <form class="login-input">
                 <div class="login-type-box">
@@ -97,10 +97,10 @@
                     </div>
 
                     <div class="img-actions-right">
-                        <span class="fa-stack fa-lg detail">
+                        <a href="image-detail.html" class="fa-stack fa-lg detail">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-info fa-stack-1x fa-inverse"></i>
-                        </span>
+                        </a>
                     </div>
 
                 </div>

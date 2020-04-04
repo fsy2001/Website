@@ -44,7 +44,6 @@
     border: none;
   }
 
-
 }
 
 
@@ -60,11 +59,15 @@
 
 .search-option-box {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+
+  background-color: rgba(255,255,255,0.4);
+  @include blur(15px);
+  border-radius: 7px;
+
+  padding: 0.3em 0.2em;
 
   margin-top: 3em;
-  width: 20em;
-  border-bottom: white 1px solid;
 }
 
 
@@ -72,9 +75,18 @@
 .search-option {
   display: inline-block;
   color: white;
+
+
+  border-radius: 7px;
+
+
   font-size: 1.2em;
-  padding: 0 0.5em 0 0.5em;
-  margin: 0 1em 0 1em;
+  padding: 0 1em;
+  margin: 0 0.2em;
+}
+
+#by-title {
+  background-color: rgba(255,255,255,0.4);
 }
 
 @media (max-width: $mobile-width) {
@@ -234,27 +246,27 @@ $test: red 1px solid;
 
   padding-top: 2em;
 
-  span {
+  span, a {
     transform: scale(1.5);
   }
 
   .thumb-up {
+    margin-right: 2em;
     color: deeppink;
   }
 
   .like {
+    margin-right: 2em;
     color: #ffce23;
   }
 
   .share {
+    margin-right: 2em;
     color: #0d96db;
   }
 
   .detail {
     color: gray;
   }
-
-
 }
-
 
