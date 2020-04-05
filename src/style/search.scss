@@ -5,6 +5,11 @@
 
 // top
 
+.login-page {
+  background: url("../../img/bodyparts/Mojave.jpg") no-repeat center;
+  background-size: cover;
+}
+
 .login-description {
   font-size: 1.5em;
 }
@@ -103,14 +108,17 @@
   // @include center-column;
   display: flex;
   flex-direction: column;
-
-
 }
 
 .search-result-title {
   width: 100%;
 
   border-bottom: $footer-border-color 1px solid;
+
+  h2 {
+    font-weight: bold;
+    font-size: 3em;
+  }
 
 }
 
@@ -186,7 +194,6 @@ $test: red 1px solid;
   display: flex; flex-direction: row;
   align-items: center;
   $unit: 1.5em;
-
 
 
   img {
@@ -270,3 +277,94 @@ $test: red 1px solid;
   }
 }
 
+// pages
+
+.search-result-pages-action {
+  width: 3em; height: 3em; border-radius: 1.5em;
+
+  transition: background-color 1s;
+
+  &:hover {
+    background-color: #f2f2fb;
+  }
+
+  display: flex; justify-content: center; align-items: center;
+
+  i {
+    color: #333333;
+    display: inline-block;
+  }
+
+}
+
+.search-result-pages {
+  @include center-row;
+  justify-content: center;
+
+  border-top: $footer-border-color 1px solid;
+  padding: 1em 0;
+}
+
+
+
+.search-result-pages-main {
+  padding: 0 3em;
+}
+
+.search-result-pages-options {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 2em;
+
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+
+  margin: 0 0.5em;
+  background-color: $footer-background;
+  color: #86868b;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.current-page {
+    text-decoration: none;
+    background: none;
+    color: black;
+  }
+}
+
+
+
+
+
+
+// responsive
+
+@media (max-width: $mobile-width) {
+  .search-option-box {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: $medium-width) {
+  .img-content {
+    flex-direction: column;
+
+    > img {
+      width: 100%;
+    }
+  }
+
+  .img-detail {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+
+  .search-result-pages-options:nth-child(4),
+  .search-result-pages-options:nth-child(5) {
+    display: none;
+  }
+}
