@@ -1,0 +1,32 @@
+@import "../presets/values";
+
+.list-img-box {
+  // @include center-column;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-img-title {
+  width: 100%;
+
+  border-bottom: $footer-border-color 1px solid;
+
+  h2 {
+    font-weight: bold;
+    font-size: 3em;
+  }
+
+}
+
+.list-img-description {
+  width: 100%;
+  padding-top: 0.3em;
+
+  span {
+    color: $footer-text;
+  }
+}
+
+.list-img-main-box {
+  padding: 3em 0 3em 0;
+}

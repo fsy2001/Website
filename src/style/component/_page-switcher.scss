@@ -1,0 +1,64 @@
+@import "../presets/values";
+
+.page-switcher-action {
+  width: 3em; height: 3em; border-radius: 1.5em;
+
+  transition: background-color 1s;
+
+  &:hover {
+    background-color: #f2f2fb;
+  }
+
+  display: flex; justify-content: center; align-items: center;
+
+  i {
+    color: #333333;
+    display: inline-block;
+  }
+
+}
+
+.page-switcher {
+  @include center-row;
+  justify-content: center;
+
+  border-top: $footer-border-color 1px solid;
+  padding: 1em 0;
+}
+
+
+
+.page-switcher-main {
+  padding: 0 3em;
+}
+
+.page-switcher-options {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 2em;
+
+  padding: 0.2em 0.4em;
+  border-radius: 7px;
+
+  margin: 0 0.5em;
+  background-color: $footer-background;
+  color: #86868b;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.current-page {
+    text-decoration: none;
+    background: none;
+    color: black;
+  }
+}
+
+@media (max-width: $medium-width) {
+  .page-switcher-options:nth-child(4),
+  .page-switcher-options:nth-child(5) {
+    display: none;
+  }
+}
