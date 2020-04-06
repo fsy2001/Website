@@ -172,7 +172,7 @@ nav {
   .user-menu::after {
     left: 74%; } }
 footer {
-  background-color: #f5f5f7;
+  background-color: #f1f1f4;
   padding-bottom: 1em; }
 
 footer a:hover {
@@ -321,7 +321,7 @@ main > * {
   justify-content: center; }
 
 .img-box {
-  background-color: #f5f5f7;
+  background-color: #f1f1f4;
   padding: 2em;
   border-radius: 7px; }
 
@@ -402,7 +402,7 @@ main > * {
     color: deeppink; }
   .img-actions .like {
     margin-right: 2em;
-    color: #ffce23; }
+    color: #ffc63c; }
   .img-actions .share {
     margin-right: 2em;
     color: #0d96db; }
@@ -455,7 +455,7 @@ main > * {
   padding: 0.2em 0.4em;
   border-radius: 7px;
   margin: 0 0.5em;
-  background-color: #f5f5f7;
+  background-color: #f1f1f4;
   color: #86868b; }
   .page-switcher-options:hover {
     text-decoration: underline; }

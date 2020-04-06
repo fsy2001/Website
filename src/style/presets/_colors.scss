@@ -24,6 +24,21 @@ $nav-divide-line: rgb(66,66,69);
 
 $footer-text: rgb(111, 111, 115);
 $footer-note: rgb(134,134,139);
-$footer-background: rgb(245,245,247);
+$footer-background: rgb(241, 241, 244);
 $footer-border-color: rgb(210,210,215);
 $footer-border: $footer-border-color 2px solid;
+
+// color
+
+$thumb-up: deeppink;
+$thumb-up-base: rgba(255, 193, 223, 0.27);
+$thumb-up-active: rgba(255, 193, 223, 0.42);
+
+$like: #ffc63c;
+$like-base: rgba(255, 243, 166, 0.24);
+$like-active: rgba(255, 243, 166, 0.43);
+
+
+$share: #0d96db;
+$share-base: rgba(82, 172, 219, 0.08);
+$share-active: rgba(82, 172, 219, 0.31);
