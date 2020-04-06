@@ -1,6 +1,7 @@
 @import "global";
 @import "component/input-common";
 @import "presets/values";
+@import "component/img-box";
 
 
 // top
@@ -138,144 +139,7 @@
 
 // results
 
-$test: red 1px solid;
 
-.search-entry {
-  background-color: $footer-background;
-  padding: 2em;
-  border-radius: 7px;
-
-}
-
-.img-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-
-  img {
-    display: block;
-  }
-}
-
-.search-square-img {
-  @include square-img(30em);
-  border-radius: 7px;
-}
-
-// #img-detail
-
-.img-detail {
-  margin-left: 2em;
-
-}
-
-.img-detail-title {
-  width: 100%;
-  display: block;
-
-  font-weight: bold;
-  font-size: 3em;
-
-  border-bottom: $footer-border-color 1px solid;
-
-  margin-bottom: 0.3em;
-}
-
-.img-detail-upload {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  margin-bottom: 1em;
-}
-
-.img-detail-upload-user {
-  display: flex; flex-direction: row;
-  align-items: center;
-  $unit: 1.5em;
-
-
-  img {
-    //border-radius: $unit;
-    //width: $unit; height: $unit;
-    // problem.
-
-    border-radius: 30px;
-
-    padding-right: 0.7em;
-  }
-
-  span {
-    font-weight: bold;
-    font-size: $unit;
-
-    color: $footer-note;
-  }
-
-}
-
-.img-detail-upload-date {
-  color: $footer-note;
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-
-.img-detail-description {
-  font-size: 1em;
-
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-  overflow: hidden;
-}
-
-.img-detail-location {
-  float: right;
-
-  padding-top: 1em;
-
-  font-size: 1.5em;
-  font-weight: bold;
-  color: $footer-note;
-}
-
-
-
-
-
-// #img-action
-
-.img-actions {
-  display: flex; flex-direction: row;
-  justify-content: space-between;
-
-  padding-top: 2em;
-
-  span, a {
-    transform: scale(1.5);
-  }
-
-  .thumb-up {
-    margin-right: 2em;
-    color: deeppink;
-  }
-
-  .like {
-    margin-right: 2em;
-    color: #ffce23;
-  }
-
-  .share {
-    margin-right: 2em;
-    color: #0d96db;
-  }
-
-  .detail {
-    color: gray;
-  }
-}
 
 // pages
 
@@ -349,22 +213,12 @@ $test: red 1px solid;
 
 }
 
+
+
 @media (max-width: $medium-width) {
-  .img-content {
-    flex-direction: column;
-
-    > img {
-      width: 100%;
-    }
-  }
-
-  .img-detail {
-    margin-left: 0;
-    margin-top: 1em;
-  }
-
   .search-result-pages-options:nth-child(4),
   .search-result-pages-options:nth-child(5) {
     display: none;
   }
+
 }

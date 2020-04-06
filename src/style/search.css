@@ -706,6 +706,104 @@ fieldset {
   font-weight: bolder;
   text-align: center; }
 
+.img-box {
+  background-color: #f5f5f7;
+  padding: 2em;
+  border-radius: 7px; }
+
+.img-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: left; }
+  .img-content img {
+    display: block; }
+
+.search-square-img {
+  object-fit: cover;
+  width: 30em;
+  height: 30em;
+  border-radius: 7px; }
+
+.img-detail {
+  margin-left: 2em; }
+
+.img-detail-title {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  font-size: 3em;
+  border-bottom: #d2d2d7 1px solid;
+  margin-bottom: 0.3em; }
+
+.img-detail-upload {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em; }
+
+.img-detail-upload-user {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 7px; }
+  .img-detail-upload-user img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin-right: 0.7em; }
+  .img-detail-upload-user span {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #86868b; }
+
+.img-detail-upload-date {
+  color: #86868b;
+  font-weight: bold;
+  font-size: 1.5em; }
+
+.img-detail-description {
+  font-size: 1em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden; }
+
+.img-detail-location {
+  float: right;
+  padding-top: 1em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #86868b; }
+
+.img-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 2em; }
+  .img-actions span, .img-actions a {
+    transform: scale(1.5); }
+  .img-actions .thumb-up {
+    margin-right: 2em;
+    color: deeppink; }
+  .img-actions .like {
+    margin-right: 2em;
+    color: #ffce23; }
+  .img-actions .share {
+    margin-right: 2em;
+    color: #0d96db; }
+  .img-actions .detail {
+    color: gray; }
+
+@media (max-width: 726px) {
+  .img-content {
+    flex-direction: column; }
+    .img-content > img {
+      width: 100%; }
+
+  .img-detail {
+    margin-left: 0;
+    margin-top: 1em; } }
 .login-page {
   background: url("../../img/bodyparts/Mojave.jpg") no-repeat center;
   background-size: cover; }
@@ -781,92 +879,6 @@ fieldset {
 .search-result-main-box {
   padding: 3em 0 3em 0; }
 
-.search-entry {
-  background-color: #f5f5f7;
-  padding: 2em;
-  border-radius: 7px; }
-
-.img-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: left; }
-  .img-content img {
-    display: block; }
-
-.search-square-img {
-  object-fit: cover;
-  width: 30em;
-  height: 30em;
-  border-radius: 7px; }
-
-.img-detail {
-  margin-left: 2em; }
-
-.img-detail-title {
-  width: 100%;
-  display: block;
-  font-weight: bold;
-  font-size: 3em;
-  border-bottom: #d2d2d7 1px solid;
-  margin-bottom: 0.3em; }
-
-.img-detail-upload {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em; }
-
-.img-detail-upload-user {
-  display: flex;
-  flex-direction: row;
-  align-items: center; }
-  .img-detail-upload-user img {
-    border-radius: 30px;
-    padding-right: 0.7em; }
-  .img-detail-upload-user span {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #86868b; }
-
-.img-detail-upload-date {
-  color: #86868b;
-  font-weight: bold;
-  font-size: 1.5em; }
-
-.img-detail-description {
-  font-size: 1em;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
-  overflow: hidden; }
-
-.img-detail-location {
-  float: right;
-  padding-top: 1em;
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #86868b; }
-
-.img-actions {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 2em; }
-  .img-actions span, .img-actions a {
-    transform: scale(1.5); }
-  .img-actions .thumb-up {
-    margin-right: 2em;
-    color: deeppink; }
-  .img-actions .like {
-    margin-right: 2em;
-    color: #ffce23; }
-  .img-actions .share {
-    margin-right: 2em;
-    color: #0d96db; }
-  .img-actions .detail {
-    color: gray; }
-
 .search-result-pages-action {
   width: 3em;
   height: 3em;
@@ -913,15 +925,6 @@ fieldset {
   .search-option-box {
     flex-direction: column; } }
 @media (max-width: 726px) {
-  .img-content {
-    flex-direction: column; }
-    .img-content > img {
-      width: 100%; }
-
-  .img-detail {
-    margin-left: 0;
-    margin-top: 1em; }
-
   .search-result-pages-options:nth-child(4),
   .search-result-pages-options:nth-child(5) {
     display: none; } }
