@@ -794,6 +794,10 @@ fieldset {
     color: #0d96db; }
   .img-actions .detail {
     color: gray; }
+  .img-actions .edit {
+    color: #ffbc4b; }
+  .img-actions .delete {
+    color: red; }
 
 @media (max-width: 726px) {
   .img-content {

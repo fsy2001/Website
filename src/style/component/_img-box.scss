@@ -135,6 +135,14 @@
   .detail {
     color: gray;
   }
+
+  .edit {
+    color: #ffbc4b;
+  }
+
+  .delete {
+    color: red;
+  }
 }
 
 @media (max-width: $medium-width) {
