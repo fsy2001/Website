@@ -171,6 +171,14 @@
     @include button;
 
   }
+
+  .submit {
+    @include button;
+
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
 }
 
 
