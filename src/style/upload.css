@@ -362,16 +362,32 @@ main > * {
   align-items: center;
   flex-direction: column; }
   .upload-img-area img {
+    opacity: 0;
+    width: 100%;
     margin: 1em;
     border-radius: 7px;
     box-shadow: 0 0 10px #919191; }
+  .upload-img-area .a-upload {
+    padding: 4px 10px;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none; }
   .upload-img-area input[type="file"] {
-    font-size: 1.2em;
-    padding: 0.3em 0.7em 0.3em 0.7em;
-    border-radius: 7px;
-    color: black;
-    background-color: white;
-    border: 1px solid #d2d2d7; }
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer; }
 
 .upload-img-description {
   display: flex;

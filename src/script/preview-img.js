@@ -3,6 +3,11 @@ $("#file0").change(function(){
     console.log("objUrl = "+objUrl);
     if (objUrl) {
         $("#img0").attr("src", objUrl);
+        let area = document.getElementById("pre-upload");
+        area.style.display = "none";
+
+        let img = document.getElementById("img0");
+        img.style.opacity = "1";
     }
 });
 
