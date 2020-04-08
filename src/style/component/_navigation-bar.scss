@@ -170,6 +170,8 @@ nav {
 
     &:hover .user-menu {
       visibility: visible;
+      opacity: 100%;
+      top: 2em;
     }
   }
 }
@@ -180,6 +182,8 @@ nav {
 
     &:hover .user-menu {
       visibility: visible;
+      opacity: 100%;
+      top: 2em;
     }
 
   }
@@ -190,6 +194,7 @@ nav {
 
 
 .user-menu {
+  opacity: 0;
   visibility: hidden;
 
   display: flex; flex-direction: column;
@@ -203,8 +208,10 @@ nav {
 
   position: absolute;
   z-index: 100;
-  top: 2em;
+  top: 1.5em; // should be 2em
   left: -4em;
+
+  transition: top,opacity 0.5s;
 }
 
 

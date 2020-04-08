@@ -120,13 +120,18 @@ nav {
   .user-account {
     position: relative; }
     .user-account:hover .user-menu {
-      visibility: visible; } }
+      visibility: visible;
+      opacity: 100%;
+      top: 2em; } }
 @media (max-width: 500px) {
   .user-account-mobile {
     position: relative; }
     .user-account-mobile:hover .user-menu {
-      visibility: visible; } }
+      visibility: visible;
+      opacity: 100%;
+      top: 2em; } }
 .user-menu {
+  opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -137,8 +142,9 @@ nav {
   background-color: white;
   position: absolute;
   z-index: 100;
-  top: 2em;
-  left: -4em; }
+  top: 1.5em;
+  left: -4em;
+  transition: top,opacity 0.5s; }
 
 .user-menu::after {
   content: "";
@@ -442,13 +448,18 @@ nav {
   .user-account {
     position: relative; }
     .user-account:hover .user-menu {
-      visibility: visible; } }
+      visibility: visible;
+      opacity: 100%;
+      top: 2em; } }
 @media (max-width: 500px) {
   .user-account-mobile {
     position: relative; }
     .user-account-mobile:hover .user-menu {
-      visibility: visible; } }
+      visibility: visible;
+      opacity: 100%;
+      top: 2em; } }
 .user-menu {
+  opacity: 0;
   visibility: hidden;
   display: flex;
   flex-direction: column;
@@ -459,8 +470,9 @@ nav {
   background-color: white;
   position: absolute;
   z-index: 100;
-  top: 2em;
-  left: -4em; }
+  top: 1.5em;
+  left: -4em;
+  transition: top,opacity 0.5s; }
 
 .user-menu::after {
   content: "";
