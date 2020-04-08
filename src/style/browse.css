@@ -329,7 +329,7 @@ main > * {
   justify-content: center;
   align-items: center; }
   .page-switcher-action:hover {
-    background-color: #f2f2fb; }
+    background-color: #e5e5e5; }
   .page-switcher-action i {
     color: #333333;
     display: inline-block; }
@@ -344,19 +344,27 @@ main > * {
   padding: 1em 0; }
 
 .page-switcher-main {
-  padding: 0 3em; }
+  padding: 0 3em;
+  display: flex;
+  flex-direction: row; }
 
 .page-switcher-options {
-  display: inline-block;
-  font-weight: bold;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
   font-size: 2em;
-  padding: 0.2em 0.4em;
-  border-radius: 7px;
+  width: 2em;
+  height: 2em;
+  border-radius: 1em;
   margin: 0 0.5em;
   background-color: #f1f1f4;
-  color: #86868b; }
+  color: #86868b;
+  transition: all 0.5s; }
   .page-switcher-options:hover {
-    text-decoration: underline; }
+    color: black;
+    background-color: #e5e5e5; }
   .page-switcher-options.current-page {
     text-decoration: none;
     background: none;
@@ -386,8 +394,8 @@ main {
   display: flex;
   justify-content: space-between;
   color: #929298;
-  padding-bottom: 1.5em;
-  border-bottom: #dadada solid 1px; }
+  padding: 1.5em 0;
+  border-bottom: #d2d2d7 solid 1px; }
 
 .filter-label {
   font-size: 1.3em; }
@@ -411,7 +419,7 @@ main {
 
 .select-option-box {
   visibility: hidden;
-  border: #dadada solid 1px;
+  border: #d2d2d7 solid 1px;
   background-color: white;
   position: absolute;
   top: 2em;
@@ -427,10 +435,42 @@ main {
   text-align: left;
   padding: 0.5em 0;
   width: 6em;
-  border-bottom: #dadada solid 1px; }
+  border-bottom: #d2d2d7 solid 1px; }
   .select-option:last-child {
     border: none; }
   .select-option:hover {
     color: #2390c5; }
+
+.left {
+  border-right: #d2d2d7 1px solid; }
+
+.selection-title-box {
+  padding: 1em 0;
+  border-bottom: #d2d2d7 px solid; }
+
+.selection-title {
+  font-size: 1.7em;
+  font-weight: bold; }
+
+.selection-option {
+  display: inline-block;
+  padding: 0.2em 0.4em;
+  margin: 0 0.1em;
+  border-radius: 7px;
+  background-color: #ededed;
+  color: #333333;
+  transition: background-color 0.5s; }
+  .selection-option:hover {
+    background-color: #dfdfdf; }
+
+.gallery img {
+  object-fit: cover;
+  width: 255px;
+  height: 255px;
+  border-radius: 7px;
+  margin: 1em 0 0 1em; }
+
+.page-switcher {
+  border: none; }
 
 /*# sourceMappingURL=browse.css.map */

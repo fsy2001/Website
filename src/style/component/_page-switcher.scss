@@ -6,7 +6,7 @@
   transition: background-color 1s;
 
   &:hover {
-    background-color: #f2f2fb;
+    background-color: #e5e5e5;
   }
 
   display: flex; justify-content: center; align-items: center;
@@ -30,23 +30,30 @@
 
 .page-switcher-main {
   padding: 0 3em;
+  display: flex; flex-direction: row;
 }
 
 .page-switcher-options {
-  display: inline-block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
-  font-weight: bold;
+  font-weight: lighter;
   font-size: 2em;
 
-  padding: 0.2em 0.4em;
-  border-radius: 7px;
+  width: 2em; height: 2em;
+  border-radius: 1em;
 
   margin: 0 0.5em;
   background-color: $footer-background;
   color: #86868b;
 
+  transition: all 0.5s;
+
   &:hover {
-    text-decoration: underline;
+    color: black;
+    background-color: #e5e5e5;
   }
 
   &.current-page {
