@@ -1,0 +1,82 @@
+@import "../presets/values";
+
+$border: rgb(218,218,218) solid 1px;
+
+$gap: 0.5em;
+$edge: 1em;
+$width: 6em;
+
+$text-light: rgb(57,57,57);
+
+.filter {
+  display: flex; justify-content: space-between;
+  color: #929298;
+
+  padding-bottom: 1.5em;
+  border-bottom: $border;
+}
+
+.filter-label {
+  font-size: 1.3em;
+}
+
+.select-area {
+  display: flex; flex-direction: row;
+}
+
+.select-box {
+  position: relative;
+  font-size: 1.3em;
+
+  margin-left: 4em;
+
+}
+
+.select-text {
+  display: inline-block;
+
+  width: 5em;
+
+  padding-right: 1em;
+}
+
+.select-prompt {
+  color: $text-light;
+
+}
+
+// options
+
+.select-option-box {
+  visibility: hidden;
+  border: $border;
+  background-color: white;
+
+  position: absolute; top: 2em;
+  opacity: 0;
+
+  padding: 0 $edge;
+
+  display: flex; flex-direction: column; justify-content: center;
+
+  transition: all 0.5s;
+}
+
+.select-option {
+  display: inline-block;
+  text-align: left;
+  padding: $gap 0;
+
+  width: $width;
+
+  border-bottom: $border;
+
+  &:last-child {
+    border: none;
+  }
+
+  &:hover {
+    color: $link-blue;
+    // change to link blue.
+  }
+}

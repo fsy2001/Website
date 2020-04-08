@@ -1,5 +1,27 @@
 @import "global";
 @import "presets/values";
 
-@import "component/region-selector";
+@import "component/page-switcher";
+
+// layout
+
+main {
+  @include center-column;
+}
+
+.main-area {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.left {
+  flex: 1;
+}
+
+.results {
+  flex: 3;
+}
+
+@import "component/filter";
 

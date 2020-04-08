@@ -1,3 +1,5 @@
+@import "../presets/values";
+
 .card {
   // unit : edge = 40 : 1
   $unit: 5em; $edge: $unit / 40;
@@ -25,12 +27,16 @@
   // two sizes.
 
   .big-pic {
-    width: 2 * $unit + $edge; height: 2 * $unit + $edge;
+    @include square-img(2 * $unit + $edge);
+
+    //width: 2 * $unit + $edge; height: 2 * $unit + $edge;
     border-radius: 3px;
   }
 
   .small-pic {
-    width: $unit; height: $unit;
+    @include square-img($unit);
+
+    //width: $unit; height: $unit;
     border-radius: 3px;
   }
 

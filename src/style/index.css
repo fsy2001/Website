@@ -351,10 +351,12 @@ main > * {
   grid-template-columns: repeat(5, 5.125em);
   grid-template-areas: "b-1 b-1 s-5 b-2 b-2" "b-1 b-1 s-6 b-2 b-2" "s-1 s-2 s-3 s-4 o-1"; }
   .card .big-pic {
+    object-fit: cover;
     width: 10.125em;
     height: 10.125em;
     border-radius: 3px; }
   .card .small-pic {
+    object-fit: cover;
     width: 5em;
     height: 5em;
     border-radius: 3px; }
