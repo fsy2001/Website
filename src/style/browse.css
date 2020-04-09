@@ -447,8 +447,39 @@ main {
   .select-option:hover {
     color: #2390c5; }
 
+.select-submit {
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  background-color: #2c72db;
+  padding: 0.3em 0.7em 0.3em 0.7em;
+  border-radius: 7px;
+  margin-left: 1em; }
+  .select-submit:hover {
+    background-color: #367cde; }
+
 .left {
   border-right: #d2d2d7 1px solid; }
+
+.login-type-box {
+  margin: 1em 1em;
+  border-radius: 7px;
+  background-color: #f2f2fa; }
+  .login-type-box i {
+    padding-right: 1em;
+    color: #a7a7a7; }
+  .login-type-box input[type="text"] {
+    border: none;
+    height: 5em;
+    width: 15em;
+    background: none;
+    padding-left: 1em;
+    border-radius: 7px; }
+  .login-type-box input::placeholder {
+    color: #a7a7a7;
+    font-size: 1.5em; }
+  .login-type-box input[type="text"]:focus {
+    border: none; }
 
 .selection-title-box {
   padding: 1em 0;

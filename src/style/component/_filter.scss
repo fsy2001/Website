@@ -79,3 +79,8 @@ $text-light: rgb(57,57,57);
     // change to link blue.
   }
 }
+
+.select-submit {
+  @include button;
+  margin-left: 1em;
+}

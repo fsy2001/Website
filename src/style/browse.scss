@@ -25,9 +25,49 @@ main {
 @import "component/filter";
 
 // left
+
+// search
+
 .left {
   border-right: $footer-border-color 1px solid;
 }
+
+.login-type-box {
+  margin: 1em 1em;
+  border-radius: $input-radius;
+  background-color: #f2f2fa;
+
+  // padding-left: 1em;
+
+  i {
+    padding-right: 1em;
+    color: #a7a7a7;
+  }
+
+  input[type="text"] {
+    border: none;
+    height: 5em; width: 15em;
+    background: none;
+    padding-left: 1em;
+
+    border-radius: $input-radius;
+
+  }
+
+
+
+  input::placeholder {
+    color: #a7a7a7;
+    font-size: 1.5em;
+  }
+
+  input[type="text"]:focus {
+    border: none;
+  }
+
+}
+
+// select
 
 .selection-title-box {
   padding: 1em 0;
