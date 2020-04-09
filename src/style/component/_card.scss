@@ -47,6 +47,11 @@ $unit: 4em; $edge: $unit / 40;
     border-radius: 3px;
   }
 
+  .pic-link-icon {
+    @include square-img($unit);
+    border-radius: $unit / 2;
+  }
+
   // place pics in right block.
 
   @for $i from 1 through 6 {
@@ -61,6 +66,10 @@ $unit: 4em; $edge: $unit / 40;
 
   .b-2 {
     grid-area: b-2;
+  }
+
+  .o-1 {
+    grid-area: o-1;
   }
 }
 

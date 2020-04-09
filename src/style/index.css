@@ -430,6 +430,11 @@ main {
     width: 4em;
     height: 4em;
     border-radius: 3px; }
+  .card .pic-link-icon {
+    object-fit: cover;
+    width: 4em;
+    height: 4em;
+    border-radius: 2em; }
   .card .s-1 {
     grid-area: s-1; }
   .card .s-2 {
@@ -446,6 +451,8 @@ main {
     grid-area: b-1; }
   .card .b-2 {
     grid-area: b-2; }
+  .card .o-1 {
+    grid-area: o-1; }
 
 @media (max-width: 726px) {
   .card {
