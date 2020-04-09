@@ -1,8 +1,15 @@
 @import "../presets/values";
+$unit: 4em; $edge: $unit / 40;
+
+
+.card-box {
+  display: inline-block;
+}
 
 .card {
   // unit : edge = 40 : 1
-  $unit: 5em; $edge: $unit / 40;
+
+
 
   width: 5 * $unit + 4 * $edge;
   height: 3 * $unit + 2 * $edge;
@@ -55,4 +62,13 @@
   .b-2 {
     grid-area: b-2;
   }
+}
+
+@media (max-width: $medium-width) {
+
+  .card {
+    transform: scale(0.8);
+  }
+
+
 }
