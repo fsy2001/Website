@@ -814,8 +814,10 @@ fieldset {
 @media (max-width: 726px) {
   .img-content {
     flex-direction: column; }
-    .img-content > img {
+    .img-content > a {
       width: 100%; }
+      .img-content > a img {
+        width: 100%; }
 
   .img-detail {
     margin-left: 0;

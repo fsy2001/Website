@@ -149,8 +149,11 @@
   .img-content {
     flex-direction: column;
 
-    > img {
+    > a {
       width: 100%;
+      img {
+        width: 100%;
+      }
     }
   }
 

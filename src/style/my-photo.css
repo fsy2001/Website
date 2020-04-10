@@ -422,8 +422,10 @@ main > * {
 @media (max-width: 726px) {
   .img-content {
     flex-direction: column; }
-    .img-content > img {
+    .img-content > a {
       width: 100%; }
+      .img-content > a img {
+        width: 100%; }
 
   .img-detail {
     margin-left: 0;
@@ -501,5 +503,8 @@ main > * {
 
 .list-img-main-box {
   padding: 3em 0 3em 0; }
+
+.img-box {
+  margin-bottom: 4em; }
 
 /*# sourceMappingURL=my-photo.css.map */

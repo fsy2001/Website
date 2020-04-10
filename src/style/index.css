@@ -390,7 +390,8 @@ main {
   overflow: hidden;
   text-align: left;
   text-indent: 2em;
-  font-weight: normal; }
+  font-weight: normal;
+  height: 5.5em; }
 
 @media (max-width: 726px) {
   .img-demo {
