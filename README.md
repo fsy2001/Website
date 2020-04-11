@@ -20,6 +20,10 @@
 
 其中 Design, Description 两目录分别存放使用图标的 `.ai` 文件和关于本项目的要求。
 
+项目静态页面的地址为 [fsy2001.github.io/Website](https://fsy2001.github.io/Website/)。
+
+**重要提示：请使用新版 Chrome 或 Firefox 浏览器访问本站，不保证其它浏览器中的显示效果。如果可能，希望能 clone 本仓库并在本地查看网页，在线查看因为加载速度的原因可能导致图片、样式表和脚本无法加载。**
+
 
 
 ## 外部依赖
